@@ -1,0 +1,11 @@
+default_groups:
+  - basic
+  - advanced
+hide_groups_details: true
+allowed_metatags:
+  - title
+  - description
+  - keywords
+  - robots
+allowed_robots:
+  - noindex

@@ -1,0 +1,14 @@
+name: Schema.org Blueprints Flex Field
+type: module
+description: Allows a Flex field to be used to create Schema.org relationships within an entity type/bundle Schema.org mapping.
+package: Schema.org Blueprints [DEPRECATED]
+core_version_requirement: '^9.4 || ^10.0'
+lifecycle: experimental
+dependencies:
+  - 'schemadotorg:schemadotorg'
+  - 'flexfield:flexfield'
+
+# Information added by Drupal.org packaging script on 2023-01-28
+version: '1.0.0-alpha1'
+project: 'schemadotorg'
+datestamp: 1674924020

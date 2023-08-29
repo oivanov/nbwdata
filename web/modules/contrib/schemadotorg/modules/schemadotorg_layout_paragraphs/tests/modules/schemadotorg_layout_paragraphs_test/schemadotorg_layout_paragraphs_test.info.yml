@@ -1,0 +1,13 @@
+name: 'Schema.org Blueprint Layout Paragraphs test'
+type: module
+description: 'Support module for the Schema.org Blueprint Layout Paragraphs module tests.'
+package: Testing
+dependencies:
+ - 'drupal:file'
+ - 'drupal:image'
+ - 'drupal:media'
+
+# Information added by Drupal.org packaging script on 2023-01-28
+version: '1.0.0-alpha1'
+project: 'schemadotorg'
+datestamp: 1674924020

@@ -1,0 +1,10 @@
+includes:
+  - %rootDir%/../../mglaman/phpstan-drupal/extension.neon
+  - %rootDir%/../../phpstan/phpstan-deprecation-rules/rules.neon
+
+parameters:
+  level: 1
+  excludePaths:
+    analyseAndScan:
+      - web/modules/custom/hook_event_dispatcher/src/Generators
+      - web/modules/custom/hook_event_dispatcher/src/ProxyClass
