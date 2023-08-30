@@ -1,0 +1,25 @@
+uuid: a0ab5623-7665-4921-ba3d-0a8ea9eb5977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.youth_application_waiver.field_guardian_address
+  module:
+    - address
+    - youth_application_waiver
+id: youth_application_waiver.youth_application_waiver.field_guardian_address
+field_name: field_guardian_address
+entity_type: youth_application_waiver
+bundle: youth_application_waiver
+label: 'Guardian Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: null
+  field_overrides: {  }
+  fields: {  }
+field_type: address

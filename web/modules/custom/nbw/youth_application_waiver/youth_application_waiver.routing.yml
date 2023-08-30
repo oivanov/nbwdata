@@ -1,0 +1,7 @@
+entity.youth_application_waiver.settings:
+  path: 'admin/structure/youth-application-waiver'
+  defaults:
+    _form: '\Drupal\youth_application_waiver\Form\YouthApplicationWaiverSettingsForm'
+    _title: 'Youth Application Waiver'
+  requirements:
+    _permission: 'administer youth application waiver'

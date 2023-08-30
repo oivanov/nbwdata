@@ -1,0 +1,111 @@
+uuid: 9e562bb8-4728-44e8-91c8-e889a9c9109f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.class_session.class_session.field_class_date
+    - field.field.class_session.class_session.field_class_name
+    - field.field.class_session.class_session.field_end_time
+    - field.field.class_session.class_session.field_hours_earned
+    - field.field.class_session.class_session.field_hours_lost
+    - field.field.class_session.class_session.field_miles_ridden
+    - field.field.class_session.class_session.field_start_time
+    - field.field.class_session.class_session.field_youth_attending
+  module:
+    - class_session
+    - datetime
+    - text
+id: class_session.class_session.default
+targetEntityType: class_session
+bundle: class_session
+mode: default
+content:
+  field_class_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_class_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_end_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_hours_earned:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_hours_lost:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_miles_ridden:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_start_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_youth_attending:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  created: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  uid: true

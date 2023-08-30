@@ -20,6 +20,7 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/backup_migrate": "^5.0",
         "drupal/better_exposed_filters": "^5.2",
+        "drupal/block_field": "^1.0@RC",
         "drupal/clientside_validation": "^4.0",
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",

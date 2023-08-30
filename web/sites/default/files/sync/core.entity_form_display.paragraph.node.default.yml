@@ -1,0 +1,27 @@
+uuid: 0e16254a-641a-488a-9b32-55ebaddae585
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.node.field_node
+    - paragraphs.paragraphs_type.node
+_core:
+  default_config_hash: gTcq7PKf7L7P9DOWbpqpLqDZZUo8IZvKCX5kOJNK-Po
+id: paragraph.node.default
+targetEntityType: paragraph
+bundle: node
+mode: default
+content:
+  field_node:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

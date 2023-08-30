@@ -1,0 +1,21 @@
+uuid: e3b560e6-1377-44b0-84eb-a83a529814a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.youth_application_waiver.field_race_other
+  module:
+    - options
+    - youth_application_waiver
+id: youth_application_waiver.youth_application_waiver.field_race_other
+field_name: field_race_other
+entity_type: youth_application_waiver
+bundle: youth_application_waiver
+label: '(Race) Describe if other'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

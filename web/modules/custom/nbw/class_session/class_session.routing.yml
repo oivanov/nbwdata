@@ -1,0 +1,7 @@
+entity.class_session.settings:
+  path: 'admin/structure/class-session'
+  defaults:
+    _form: '\Drupal\class_session\Form\ClassSessionSettingsForm'
+    _title: 'Class Session'
+  requirements:
+    _permission: 'administer class session'

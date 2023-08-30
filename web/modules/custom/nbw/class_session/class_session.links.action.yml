@@ -1,0 +1,5 @@
+class_session.add_form:
+  title: 'Add class session'
+  route_name: entity.class_session.add_form
+  appears_on:
+    - entity.class_session.collection
