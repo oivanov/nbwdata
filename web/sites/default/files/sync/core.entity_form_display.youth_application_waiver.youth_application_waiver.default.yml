@@ -60,13 +60,13 @@ mode: default
 content:
   field_able_ride_bike:
     type: options_select
-    weight: 53
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
   field_any_concerns:
     type: text_textarea
-    weight: 55
+    weight: 29
     region: content
     settings:
       rows: 5
@@ -74,7 +74,7 @@ content:
     third_party_settings: {  }
   field_ask_us_anything_:
     type: text_textarea
-    weight: 69
+    weight: 43
     region: content
     settings:
       rows: 5
@@ -82,19 +82,19 @@ content:
     third_party_settings: {  }
   field_can_contact:
     type: options_select
-    weight: 43
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_can_ride_20:
     type: options_select
-    weight: 54
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   field_consent_to_liability_waive:
     type: string_textfield
-    weight: 67
+    weight: 41
     region: content
     settings:
       size: 60
@@ -102,7 +102,7 @@ content:
     third_party_settings: {  }
   field_consent_to_media_:
     type: string_textfield
-    weight: 68
+    weight: 42
     region: content
     settings:
       size: 60
@@ -110,20 +110,20 @@ content:
     third_party_settings: {  }
   field_current_grade_level:
     type: number
-    weight: 40
+    weight: 14
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_date_of_birth:
     type: datetime_default
-    weight: 38
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_emergency_contact_name:
     type: text_textfield
-    weight: 56
+    weight: 30
     region: content
     settings:
       size: 60
@@ -131,14 +131,14 @@ content:
     third_party_settings: {  }
   field_emergency_contact_phone:
     type: telephone_default
-    weight: 58
+    weight: 32
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_emergency_relationship:
     type: text_textfield
-    weight: 57
+    weight: 31
     region: content
     settings:
       size: 60
@@ -146,7 +146,7 @@ content:
     third_party_settings: {  }
   field_gender_other:
     type: text_textfield
-    weight: 45
+    weight: 19
     region: content
     settings:
       size: 60
@@ -154,13 +154,13 @@ content:
     third_party_settings: {  }
   field_guardian_address:
     type: address_default
-    weight: 27
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_guardian_email:
     type: email_default
-    weight: 26
+    weight: 0
     region: content
     settings:
       placeholder: ''
@@ -168,49 +168,49 @@ content:
     third_party_settings: {  }
   field_guardian_relationship:
     type: options_select
-    weight: 33
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_has_inhaler:
     type: options_select
-    weight: 50
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_have_pass:
     type: options_select
-    weight: 63
+    weight: 37
     region: content
     settings: {  }
     third_party_settings: {  }
   field_height:
     type: options_select
-    weight: 42
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   field_leave_by_themselves:
     type: options_select
-    weight: 59
+    weight: 33
     region: content
     settings: {  }
     third_party_settings: {  }
   field_leave_on_bike:
     type: options_select
-    weight: 61
+    weight: 35
     region: content
     settings: {  }
     third_party_settings: {  }
   field_may_give_benadryl:
     type: options_select
-    weight: 49
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_may_leave_with:
     type: text_textarea
-    weight: 60
+    weight: 34
     region: content
     settings:
       rows: 5
@@ -218,25 +218,25 @@ content:
     third_party_settings: {  }
   field_may_septa:
     type: options_select
-    weight: 62
+    weight: 36
     region: content
     settings: {  }
     third_party_settings: {  }
   field_may_wade:
     type: options_select
-    weight: 52
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }
   field_need_token:
     type: options_select
-    weight: 64
+    weight: 38
     region: content
     settings: {  }
     third_party_settings: {  }
   field_other_meds:
     type: text_textarea
-    weight: 51
+    weight: 25
     region: content
     settings:
       rows: 5
@@ -244,7 +244,7 @@ content:
     third_party_settings: {  }
   field_other_way_to_hear:
     type: text_textfield
-    weight: 66
+    weight: 40
     region: content
     settings:
       size: 60
@@ -252,38 +252,38 @@ content:
     third_party_settings: {  }
   field_preferred_contact_method:
     type: options_select
-    weight: 32
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_primary_phone:
     type: telephone_default
-    weight: 28
+    weight: 2
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_primary_phone_type:
     type: options_select
-    weight: 29
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_public_assistance:
     type: options_select
-    weight: 34
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_race_other:
     type: options_select
-    weight: 47
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   field_school:
     type: text_textfield
-    weight: 41
+    weight: 15
     region: content
     settings:
       size: 60
@@ -291,32 +291,32 @@ content:
     third_party_settings: {  }
   field_secondary_phone:
     type: telephone_default
-    weight: 30
+    weight: 4
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_secondary_phone_type:
     type: options_select
-    weight: 31
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_word_on_street:
     type: options_select
-    weight: 65
+    weight: 39
     region: content
     settings: {  }
     third_party_settings: {  }
   field_youth_address:
     type: address_default
-    weight: 39
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_youth_allergies:
     type: text_textarea
-    weight: 48
+    weight: 22
     region: content
     settings:
       rows: 5
@@ -324,7 +324,7 @@ content:
     third_party_settings: {  }
   field_youth_email:
     type: email_default
-    weight: 37
+    weight: 11
     region: content
     settings:
       placeholder: ''
@@ -332,32 +332,32 @@ content:
     third_party_settings: {  }
   field_youth_gender:
     type: options_select
-    weight: 44
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_youth_interested:
     type: options_select
-    weight: 35
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_youth_phone:
     type: telephone_default
-    weight: 36
+    weight: 10
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_youth_race:
     type: options_select
-    weight: 46
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   notes:
     type: text_textarea
-    weight: 0
+    weight: 44
     region: content
     settings:
       rows: 5
