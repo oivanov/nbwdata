@@ -49,6 +49,7 @@ dependencies:
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_phone
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_race
   module:
+    - allowed_formats
     - text
     - youth_application_waiver
 id: youth_application_waiver.youth_application_waiver.step_6
@@ -63,9 +64,12 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   field_word_on_street:
-    type: options_select
+    type: options_buttons
     weight: 0
     region: content
     settings: {  }

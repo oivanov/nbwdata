@@ -8,6 +8,7 @@
 use Drupal\Core\Render\Element;
 use Drupal\user\UserInterface;
 use Drupal\youth_application_waiver\Entity\YouthApplicationWaiver;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_theme().
@@ -18,6 +19,27 @@ function youth_application_waiver_theme() {
       'render element' => 'elements',
     ],
   ];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function youth_application_waiver_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $forms = ['youth_application_waiver_step_1_form', 'youth_application_waiver_step_2_form', 'youth_application_waiver_step_3_form',
+    'youth_application_waiver_step_4_form', 'youth_application_waiver_step_5_form', 'youth_application_waiver_step_6_form',
+    'youth_application_waiver_step_7_form', 'youth_application_waiver_step_8_form', 'youth_application_waiver_step_9_form',
+    'youth_application_waiver_edit_form'];
+  if (in_array($form_id, $forms)) {
+    // Prevent revision log box access
+    $form['revision_log']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_options_list_alter().
+ */
+function youth_application_waiver_options_list_alter(array &$options, array $context) {
+  unset($options['_none']);
 }
 
 /**

@@ -71,6 +71,7 @@ use Drupal\youth_application_waiver\YouthApplicationWaiverInterface;
  *     "canonical" = "/youth-waivers/{youth_application_waiver}",
  *     "edit-form" = "/youth-waiver/{youth_application_waiver}/edit",
  *     "delete-form" = "/youth-waiver/{youth_application_waiver}/delete",
+ *     "create" = "/youth-waiver/create"
  *   },
  *   field_ui_base_route = "entity.youth_application_waiver.settings",
  * )

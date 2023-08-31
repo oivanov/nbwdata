@@ -1,10 +1,10 @@
-uuid: be1989b3-e0a3-433d-95c8-d0f36fce0939
+uuid: 1de41d81-187f-44f7-a9b6-854709658d00
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
-    - options
+    - text
     - youth_application_waiver
 third_party_settings:
   field_permissions:
@@ -12,11 +12,10 @@ third_party_settings:
 id: youth_application_waiver.field_race_other
 field_name: field_race_other
 entity_type: youth_application_waiver
-type: list_string
+type: text
 settings:
-  allowed_values: {  }
-  allowed_values_function: ''
-module: options
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

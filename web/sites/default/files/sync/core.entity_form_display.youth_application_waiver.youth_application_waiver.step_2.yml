@@ -50,6 +50,7 @@ dependencies:
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_race
   module:
     - address
+    - allowed_formats
     - datetime
     - telephone
     - text
@@ -60,7 +61,7 @@ bundle: youth_application_waiver
 mode: step_2
 content:
   field_can_contact:
-    type: options_select
+    type: options_buttons
     weight: 8
     region: content
     settings: {  }
@@ -85,19 +86,27 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   field_height:
-    type: options_select
+    type: options_buttons
     weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_race_other:
-    type: options_select
+    type: text_textfield
     weight: 12
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   field_school:
     type: text_textfield
     weight: 6
@@ -105,7 +114,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   field_youth_address:
     type: address_default
     weight: 4
@@ -121,13 +133,13 @@ content:
       size: 60
     third_party_settings: {  }
   field_youth_gender:
-    type: options_select
+    type: options_buttons
     weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_youth_interested:
-    type: options_select
+    type: options_buttons
     weight: 0
     region: content
     settings: {  }
@@ -140,7 +152,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_youth_race:
-    type: options_select
+    type: options_buttons
     weight: 11
     region: content
     settings: {  }

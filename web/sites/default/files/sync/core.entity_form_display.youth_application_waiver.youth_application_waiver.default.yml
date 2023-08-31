@@ -251,7 +251,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_preferred_contact_method:
-    type: options_select
+    type: options_buttons
     weight: 6
     region: content
     settings: {  }
@@ -270,16 +270,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_public_assistance:
-    type: options_select
+    type: options_buttons
     weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_race_other:
-    type: options_select
-    weight: 21
+    type: text_textfield
+    weight: 45
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_school:
     type: text_textfield

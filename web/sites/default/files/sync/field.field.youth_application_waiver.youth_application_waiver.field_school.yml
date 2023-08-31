@@ -5,8 +5,13 @@ dependencies:
   config:
     - field.storage.youth_application_waiver.field_school
   module:
+    - allowed_formats
     - text
     - youth_application_waiver
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
 id: youth_application_waiver.youth_application_waiver.field_school
 field_name: field_school
 entity_type: youth_application_waiver

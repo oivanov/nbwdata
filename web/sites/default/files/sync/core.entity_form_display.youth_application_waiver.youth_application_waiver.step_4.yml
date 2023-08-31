@@ -49,6 +49,7 @@ dependencies:
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_phone
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_race
   module:
+    - allowed_formats
     - telephone
     - text
     - youth_application_waiver
@@ -64,7 +65,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
   field_emergency_contact_phone:
     type: telephone_default
     weight: 2
@@ -79,7 +83,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
 hidden:
   created: true
   field_able_ride_bike: true

@@ -14,7 +14,12 @@ class YouthApplicationWaiverAddStep8 extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function save(array $form, FormStateInterface $form_state) {
-    $result = parent::save($form, $form_state);
+    // Redirect to step 9.
+    $entity = $this->getEntity();
+    $entity->save();
+    $id = $entity->id();
+    $form_state->setRedirect('youth_application_waiver.step9', ['youth_application_waiver' => $id]);
+/*    $result = parent::save($form, $form_state);
 
     $entity = $this->getEntity();
 
@@ -38,7 +43,44 @@ class YouthApplicationWaiverAddStep8 extends ContentEntityForm {
 
     $form_state->setRedirect('entity.youth_application_waiver.canonical', ['youth_application_waiver' => $entity->id()]);
 
-    return $result;
+    return $result;*/
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function buildForm(array $form, FormStateInterface $form_state) {
+    /* @var $entity \Drupal\youth_application_waiver\Entity\YouthApplicationWaiver */
+    $form = parent::buildForm($form, $form_state);
+    $form['actions']['submit']['#value'] = t('Save and proceed');
+    // Add a custom HTML element to the form.
+    $media_release_text = 'media release text from DB';
+    $form['media_release_element'] = array(
+      '#markup' => '<br><div class="custom-form-header">The media release Text goes here: '.$media_release_text. '</div>',
+      '#weight' => -10,  // Adjust the weight to control the header's position.
+    );
+    return $form;
+  }
+  protected function actions(array $form, FormStateInterface $form_state) {
+    $actions = parent::actions($form, $form_state);
+    $actions['go_back'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Back to step 7'),
+      '#submit' => ['::goBack'],
+      '#weight' => 90,
+      '#limit_validation_errors' => []
+    ];
+    if (array_key_exists('delete', $actions)) {
+      unset($actions['delete']);
+    }
+    $actions['#prefix'] = '<i>Step 8 of 9</i>';
+    return $actions;
+  }
+
+  public function goBack(array $form, FormStateInterface $form_state) {
+    $entity = $this->getEntity();
+    $id = $entity->id();
+    $form_state->setRedirect('youth_application_waiver.step7', ['youth_application_waiver' => $id]);
   }
 
 }

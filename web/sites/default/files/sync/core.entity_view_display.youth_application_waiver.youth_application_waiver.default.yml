@@ -292,11 +292,11 @@ content:
     weight: 8
     region: content
   field_race_other:
-    type: list_default
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 45
     region: content
   field_school:
     type: text_default

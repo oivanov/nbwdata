@@ -11,7 +11,7 @@ id: youth_application_waiver.youth_application_waiver.field_youth_address
 field_name: field_youth_address
 entity_type: youth_application_waiver
 bundle: youth_application_waiver
-label: 'Youth Address'
+label: 'Youth Name And Address'
 description: ''
 required: true
 translatable: false
