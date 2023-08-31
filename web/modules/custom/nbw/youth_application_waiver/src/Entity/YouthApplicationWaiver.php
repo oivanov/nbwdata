@@ -67,11 +67,11 @@ use Drupal\youth_application_waiver\YouthApplicationWaiverInterface;
  *   },
  *   links = {
  *     "collection" = "/admin/content/youth-waivers",
- *     "add-form" = "/youth-waiver/add",
- *     "canonical" = "/youth-waivers/{youth_application_waiver}",
+ *     "add" = "/youth-waivers/create",
+ *     "canonical" = "/youth-waiver/{youth_application_waiver}",
  *     "edit-form" = "/youth-waiver/{youth_application_waiver}/edit",
  *     "delete-form" = "/youth-waiver/{youth_application_waiver}/delete",
- *     "create" = "/youth-waiver/create"
+ *     "create" = "/youth-waivers/create"
  *   },
  *   field_ui_base_route = "entity.youth_application_waiver.settings",
  * )
