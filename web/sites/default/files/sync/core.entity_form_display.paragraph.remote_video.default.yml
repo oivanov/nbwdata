@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.remote_video.schema_main_entity_of_page
     - paragraphs.paragraphs_type.remote_video
   module:
+    - field_layout
+    - layout_discovery
     - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.remote_video.default
 targetEntityType: paragraph
 bundle: remote_video

@@ -52,9 +52,16 @@ dependencies:
     - address
     - allowed_formats
     - datetime
+    - field_layout
+    - layout_discovery
     - telephone
     - text
     - youth_application_waiver
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: youth_application_waiver.youth_application_waiver.step_2
 targetEntityType: youth_application_waiver
 bundle: youth_application_waiver

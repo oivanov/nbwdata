@@ -8,7 +8,14 @@ dependencies:
     - field.field.paragraph.item_list_string.schema_name
     - paragraphs.paragraphs_type.item_list_string
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.item_list_string.default
 targetEntityType: paragraph
 bundle: item_list_string

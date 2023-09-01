@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.webform.field_webform
     - paragraphs.paragraphs_type.webform
   module:
+    - field_layout
+    - layout_discovery
     - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: '-blIZ-uVTzyPoSsFeT81w6ZRyLATyMagrvT5uruACF4'
 id: paragraph.webform.default

@@ -61,6 +61,7 @@ module:
   examples: 0
   field: 0
   field_example: 0
+  field_layout: 0
   field_permission_example: 0
   field_permissions: 0
   field_ui: 0

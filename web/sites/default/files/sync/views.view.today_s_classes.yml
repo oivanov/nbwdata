@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_students
     - node.type.event
+    - system.menu.main
   module:
     - node
     - smart_date
@@ -595,7 +596,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: todays-classes
+      path: classes-today
+      menu:
+        type: normal
+        title: 'Today''s Classes'
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: 'menu_link_content:d74c58d1-956a-4614-8ebb-f332cf2a2890'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

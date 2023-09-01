@@ -7,7 +7,14 @@ dependencies:
     - field.field.class_registration_submission.class_registration_submission.field_youth
   module:
     - class_registration_submission
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: class_registration_submission.class_registration_submission.default
 targetEntityType: class_registration_submission
 bundle: class_registration_submission

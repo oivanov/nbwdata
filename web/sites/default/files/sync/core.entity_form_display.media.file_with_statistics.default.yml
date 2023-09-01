@@ -6,8 +6,15 @@ dependencies:
     - field.field.media.file_with_statistics.field_media_file
     - media.type.file_with_statistics
   module:
+    - field_layout
     - file
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: media.file_with_statistics.default
 targetEntityType: media
 bundle: file_with_statistics

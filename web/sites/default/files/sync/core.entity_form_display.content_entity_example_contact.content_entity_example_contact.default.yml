@@ -7,6 +7,13 @@ dependencies:
   module:
     - content_entity_example
     - datetime
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: content_entity_example_contact.content_entity_example_contact.default
 targetEntityType: content_entity_example_contact
 bundle: content_entity_example_contact

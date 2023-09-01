@@ -6,8 +6,15 @@ dependencies:
     - field.field.node.youth_program.body
     - node.type.youth_program
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.youth_program.default
 targetEntityType: node
 bundle: youth_program

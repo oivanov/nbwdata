@@ -14,7 +14,14 @@ dependencies:
   module:
     - class_session
     - datetime
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: class_session.class_session.default
 targetEntityType: class_session
 bundle: class_session

@@ -8,8 +8,15 @@ dependencies:
     - field.field.node.class_roster.field_students
     - node.type.class_roster
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.class_roster.default
 targetEntityType: node
 bundle: class_roster

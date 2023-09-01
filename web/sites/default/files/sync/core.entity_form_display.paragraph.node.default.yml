@@ -5,6 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.node.field_node
     - paragraphs.paragraphs_type.node
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: gTcq7PKf7L7P9DOWbpqpLqDZZUo8IZvKCX5kOJNK-Po
 id: paragraph.node.default

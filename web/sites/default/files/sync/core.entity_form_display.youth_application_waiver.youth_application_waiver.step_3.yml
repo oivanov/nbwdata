@@ -50,8 +50,15 @@ dependencies:
     - field.field.youth_application_waiver.youth_application_waiver.field_youth_race
   module:
     - allowed_formats
+    - field_layout
+    - layout_discovery
     - text
     - youth_application_waiver
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: youth_application_waiver.youth_application_waiver.step_3
 targetEntityType: youth_application_waiver
 bundle: youth_application_waiver

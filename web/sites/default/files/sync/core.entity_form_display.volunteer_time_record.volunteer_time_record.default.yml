@@ -8,8 +8,15 @@ dependencies:
     - field.field.volunteer_time_record.volunteer_time_record.field_volunteer_name
   module:
     - datetime
+    - field_layout
+    - layout_discovery
     - text
     - volunteer_time_record
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: volunteer_time_record.volunteer_time_record.default
 targetEntityType: volunteer_time_record
 bundle: volunteer_time_record

@@ -8,8 +8,15 @@ dependencies:
     - field.field.paragraph.item_list_link.schema_name
     - paragraphs.paragraphs_type.item_list_link
   module:
+    - field_layout
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.item_list_link.default
 targetEntityType: paragraph
 bundle: item_list_link

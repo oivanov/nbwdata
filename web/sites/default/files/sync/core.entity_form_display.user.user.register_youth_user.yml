@@ -20,11 +20,18 @@ dependencies:
     - image.style.thumbnail
   module:
     - address
+    - field_layout
     - image
+    - layout_discovery
     - path
     - profile
     - telephone
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
 id: user.user.register_youth_user

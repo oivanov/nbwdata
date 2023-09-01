@@ -336,12 +336,14 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: add_content_by_bundle
-          label: 'Add an Event'
+          label: 'Add an Event or Class'
           empty: false
           bundle: event
           class: button
           target: ''
           width: 600
+          form_mode: null
+          params: ''
       footer: {  }
       display_extenders: {  }
     cache_metadata:

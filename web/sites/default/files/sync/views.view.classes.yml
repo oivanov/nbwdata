@@ -1,18 +1,19 @@
-uuid: bf2f985b-bcbf-491d-a44e-ca4e1cb63588
+uuid: 52f422b5-7824-40d9-924f-3f135e6e31fe
 langcode: en
 status: true
 dependencies:
   config:
-    - group.type.class
+    - node.type.event
   module:
-    - group
-id: class_names
-label: 'Class Names'
+    - node
+    - user
+id: classes
+label: Classes
 module: views
 description: ''
 tag: ''
-base_table: groups_field_data
-base_field: id
+base_table: node_field_data
+base_field: nid
 display:
   default:
     id: default
@@ -20,46 +21,28 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Class Names'
+      title: Classes
       fields:
-        label:
-          id: label
-          table: groups_field_data
-          field: label
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: null
-          entity_field: label
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -75,7 +58,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -115,20 +99,37 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
           id: status
-          table: groups_field_data
+          table: node_field_data
           field: status
-          entity_type: group
+          entity_type: node
           entity_field: status
           plugin_id: boolean
           value: '1'
@@ -139,13 +140,13 @@ display:
             operator_list: {  }
         type:
           id: type
-          table: groups_field_data
+          table: node_field_data
           field: type
-          entity_type: group
+          entity_type: node
           entity_field: type
           plugin_id: bundle
           value:
-            class: class
+            event: event
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -153,6 +154,11 @@ display:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -171,23 +177,23 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
       tags: {  }
-  entity_reference_1:
-    id: entity_reference_1
-    display_title: 'Entity Reference'
-    display_plugin: entity_reference
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 2
     display_options:
       fields:
-        label:
-          id: label
-          table: groups_field_data
-          field: label
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: null
-          entity_field: label
           plugin_id: field
           label: ''
           exclude: false
@@ -232,73 +238,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        id:
-          id: id
-          table: groups_field_data
-          field: id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: group
-          entity_field: id
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
           settings:
-            thousand_separator: ''
-            prefix_suffix: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -309,12 +250,19 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      style:
-        type: entity_reference
+      pager:
+        type: some
         options:
-          search_fields:
-            label: label
+          offset: 0
+          items_per_page: 5
+      style:
+        type: default
+      row:
+        type: fields
       defaults:
+        pager: false
+        style: false
+        row: false
         fields: false
       display_extenders: {  }
     cache_metadata:
@@ -322,6 +270,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
       tags: {  }
   page_1:
     id: page_1
@@ -330,11 +280,13 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: class-names
+      path: classes
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
       tags: {  }

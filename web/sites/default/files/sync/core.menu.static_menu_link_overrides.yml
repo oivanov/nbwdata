@@ -7,3 +7,15 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  examples__menu_example__alternate_menu:
+    menu_name: main
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: false
+  'admin_toolbar_tools__extra_links:views_ui__today_s_classes':
+    enabled: true
+    menu_name: admin
+    parent: entity.view.collection
+    expanded: false
+    weight: 0

@@ -6,7 +6,14 @@ dependencies:
     - field.field.group.class.field_class
     - group.type.class
   module:
+    - field_layout
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: group.class.default
 targetEntityType: group
 bundle: class

@@ -12,10 +12,17 @@ dependencies:
     - node.type.place
   module:
     - address
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - telephone
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.place.default
 targetEntityType: node
 bundle: place

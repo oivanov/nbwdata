@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.statement.schema_text
     - paragraphs.paragraphs_type.statement
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.statement.default
 targetEntityType: paragraph
 bundle: statement

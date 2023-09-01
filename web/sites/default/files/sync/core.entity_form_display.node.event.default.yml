@@ -8,9 +8,16 @@ dependencies:
     - field.field.node.event.field_when
     - node.type.event
   module:
+    - field_layout
+    - layout_discovery
     - path
     - smart_date
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: yLfLb-gMezlDoKfM2gwlId7EPxtFSRsYa7aAicEy4VE
 id: node.event.default

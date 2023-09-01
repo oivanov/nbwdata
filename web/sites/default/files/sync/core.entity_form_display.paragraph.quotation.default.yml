@@ -7,7 +7,14 @@ dependencies:
     - field.field.paragraph.quotation.schema_text
     - paragraphs.paragraphs_type.quotation
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.quotation.default
 targetEntityType: paragraph
 bundle: quotation

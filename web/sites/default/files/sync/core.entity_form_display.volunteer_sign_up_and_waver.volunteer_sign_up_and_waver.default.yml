@@ -9,9 +9,16 @@ dependencies:
     - field.field.volunteer_sign_up_and_waver.volunteer_sign_up_and_waver.field_volunteer_name_and_address
   module:
     - address
+    - field_layout
+    - layout_discovery
     - telephone
     - text
     - volunteer_sign_up_record
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: volunteer_sign_up_and_waver.volunteer_sign_up_and_waver.default
 targetEntityType: volunteer_sign_up_and_waver
 bundle: volunteer_sign_up_and_waver

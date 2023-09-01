@@ -8,13 +8,20 @@ dependencies:
     - field.field.node.basic_content_type.field_file_to_download_with_stat
     - node.type.basic_content_type
   module:
+    - field_layout
     - file
+    - layout_discovery
     - media_library
     - path
     - text
   enforced:
     module:
       - node_type_example
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: UsZdtDru5OWbBgqTT4M8vPCR9iXLQq5AgPEp6qWT1Xs
 id: node.basic_content_type.default

@@ -7,8 +7,15 @@ dependencies:
     - field.field.node.nbw_documents_and_wavers.field_doc_file
     - node.type.nbw_documents_and_wavers
   module:
+    - field_layout
+    - layout_discovery
     - media_library
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.nbw_documents_and_wavers.default
 targetEntityType: node
 bundle: nbw_documents_and_wavers
