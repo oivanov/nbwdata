@@ -286,18 +286,12 @@ display:
           tax_field: field_event_types
           vocabularies: event_types
           color_bundle:
-            adult_class_and_shop_hours: '#3a87ad'
-            adult_program: '#3a87ad'
             article: '#3a87ad'
             basic_content_type: '#3a87ad'
-            course: '#3a87ad'
-            course_instance: '#3a87ad'
+            class_roster: '#3a87ad'
             event: '#3a87ad'
-            event_schemadotorg: '#3a87ad'
             locked_content_type: '#3a87ad'
-            migrate_example_beer: '#3a87ad'
-            migrate_example_producer: '#3a87ad'
-            migrate_example_wine: '#3a87ad'
+            nbw_documents_and_wavers: '#3a87ad'
             page: '#3a87ad'
             place: '#3a87ad'
             product: '#3a87ad'
@@ -315,7 +309,7 @@ display:
           color_taxonomies:
             1: '#ff8040'
             2: '#008080'
-            3: '#800040'
+            3: '#80ff80'
       row:
         type: fields
       query:

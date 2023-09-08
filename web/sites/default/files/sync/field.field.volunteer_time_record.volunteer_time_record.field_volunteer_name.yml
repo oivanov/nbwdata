@@ -12,7 +12,7 @@ entity_type: volunteer_time_record
 bundle: volunteer_time_record
 label: 'Volunteer Name'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

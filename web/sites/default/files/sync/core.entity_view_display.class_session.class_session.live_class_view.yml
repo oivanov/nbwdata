@@ -27,23 +27,8 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          a5af219e-9fa4-4bf5-ae2e-698b6c3a3aff:
-            uuid: a5af219e-9fa4-4bf5-ae2e-698b6c3a3aff
-            region: content
-            configuration:
-              id: 'field_block:class_session:class_session:field_class_name'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           8a97759d-1314-464d-bb40-fb52ef029806:
             uuid: 8a97759d-1314-464d-bb40-fb52ef029806
             region: content
@@ -59,11 +44,35 @@ third_party_settings:
                   timezone_override: ''
                   format_type: medium
                 third_party_settings: {  }
-            weight: 1
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          a5af219e-9fa4-4bf5-ae2e-698b6c3a3aff:
+            uuid: a5af219e-9fa4-4bf5-ae2e-698b6c3a3aff
+            region: first
+            configuration:
+              id: 'field_block:class_session:class_session:field_class_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
           844d2795-539f-40bb-93fb-cbba3f8c09ab:
             uuid: 844d2795-539f-40bb-93fb-cbba3f8c09ab
-            region: content
+            region: second
             configuration:
               id: 'field_block:class_session:class_session:field_start_time'
               label_display: '0'
@@ -76,11 +85,11 @@ third_party_settings:
                   timezone_override: ''
                   format_type: medium
                 third_party_settings: {  }
-            weight: 2
+            weight: 0
             additional: {  }
           ac1b6890-9f80-423d-bece-1f3bbdd74f94:
             uuid: ac1b6890-9f80-423d-bece-1f3bbdd74f94
-            region: content
+            region: third
             configuration:
               id: 'field_block:class_session:class_session:field_end_time'
               label_display: '0'
@@ -93,8 +102,14 @@ third_party_settings:
                   timezone_override: ''
                   format_type: medium
                 third_party_settings: {  }
-            weight: 3
+            weight: 0
             additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
           929e4979-2184-497a-810c-3b08fa15a8fb:
             uuid: 929e4979-2184-497a-810c-3b08fa15a8fb
             region: content
@@ -109,7 +124,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 4
+            weight: 5
             additional: {  }
           2d42ac3e-ab69-4457-b863-ffcf7777a709:
             uuid: 2d42ac3e-ab69-4457-b863-ffcf7777a709
@@ -128,7 +143,7 @@ third_party_settings:
                   scale: 2
                   prefix_suffix: true
                 third_party_settings: {  }
-            weight: 5
+            weight: 6
             additional: {  }
           022df602-11b1-400c-bc3b-206f55b8d1df:
             uuid: 022df602-11b1-400c-bc3b-206f55b8d1df
@@ -147,7 +162,7 @@ third_party_settings:
                   scale: 2
                   prefix_suffix: true
                 third_party_settings: {  }
-            weight: 6
+            weight: 7
             additional: {  }
           1fafb341-805e-4e70-98e4-f41442444a5e:
             uuid: 1fafb341-805e-4e70-98e4-f41442444a5e
@@ -166,7 +181,7 @@ third_party_settings:
                   scale: 2
                   prefix_suffix: true
                 third_party_settings: {  }
-            weight: 7
+            weight: 8
             additional: {  }
           c7c9e071-84b7-48f4-9468-146ad42ccbf2:
             uuid: c7c9e071-84b7-48f4-9468-146ad42ccbf2
@@ -181,7 +196,7 @@ third_party_settings:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-            weight: 8
+            weight: 9
             additional: {  }
         third_party_settings: {  }
 id: class_session.class_session.live_class_view

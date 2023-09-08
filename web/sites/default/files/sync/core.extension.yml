@@ -43,12 +43,18 @@ module:
   content_moderation: 0
   contextual: 0
   cron_example: 0
+  ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   dbtng_example: 0
   devel: 0
   devel_generate: 0
+  devel_kint_extras: 0
   download_statistics: 0
+  ds_devel: 0
+  ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
   email_example: 0
@@ -198,8 +204,10 @@ module:
   webprofiler: 0
   workflows: 0
   youth_application_waiver: 0
+  ds: 1
   pathauto: 1
   webform_bootstrap: 1
+  ds_extras: 2
   views: 10
   paragraphs: 11
   gatsby: 100
